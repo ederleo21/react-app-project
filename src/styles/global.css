@@ -1,0 +1,80 @@
+:root {
+  --color-primario: #f97316;
+  --color-primario-oscuro: #ea580c;
+  --color-primario-rgb: 249, 115, 22;
+  --color-acento: #f97362;
+  --color-acento-oscuro: #ea5a45;
+  --color-texto: #3a2a20;
+  --color-texto-suave: #9a8273;
+  --color-fondo: #fffaf4;
+  --color-superficie: #ffffff;
+  --color-borde: #f4e3d3;
+  --color-error: #dc2626;
+  --color-exito: #16a34a;
+
+  --fuente-base: "Segoe UI", system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
+  --tamano-pequeno: 0.875rem;
+  --tamano-base: 1rem;
+  --tamano-grande: 1.25rem;
+  --tamano-titulo: clamp(1.75rem, 4vw, 2.75rem);
+
+  --espacio-xs: 0.5rem;
+  --espacio-sm: 1rem;
+  --espacio-md: 1.5rem;
+  --espacio-lg: 2.5rem;
+  --espacio-xl: 4rem;
+
+  --radio: 1rem;
+  --sombra: 0 20px 45px -15px rgba(var(--color-primario-rgb), 0.35);
+  --sombra-suave: 0 4px 20px -8px rgba(15, 23, 42, 0.15);
+  --ancho-maximo: 1100px;
+  --transicion: 0.2s ease-in-out;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--fuente-base);
+  font-size: var(--tamano-base);
+  color: var(--color-texto);
+  background-color: var(--color-fondo);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.contenedor {
+  width: 100%;
+  max-width: var(--ancho-maximo);
+  margin-inline: auto;
+  padding-inline: var(--espacio-sm);
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}

@@ -1,0 +1,50 @@
+.footer {
+  background-color: var(--color-texto);
+  color: #ffffff;
+  padding-block: var(--espacio-lg);
+  border-top: 4px solid transparent;
+  border-image: linear-gradient(90deg, var(--color-primario), var(--color-acento)) 1;
+}
+
+.footer__marca {
+  background: linear-gradient(90deg, #fbbf24, var(--color-primario));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.footer__contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--espacio-sm);
+  text-align: center;
+}
+
+.footer__marca {
+  font-size: var(--tamano-grande);
+  font-weight: 700;
+}
+
+.footer__nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--espacio-md);
+}
+
+.footer__enlace {
+  color: #ffffff;
+  opacity: 0.85;
+  transition: opacity var(--transicion);
+}
+
+.footer__enlace:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.footer__copy {
+  font-size: var(--tamano-pequeno);
+  opacity: 0.7;
+}
