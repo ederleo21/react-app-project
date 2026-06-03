@@ -7,13 +7,6 @@ function Footer() {
 
   return (
     <footer className="footer">
-      {/* Decorative top wave */}
-      <div className="footer__ola" aria-hidden="true">
-        <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
-          <path d="M0,60 C360,0 720,50 1080,20 C1260,5 1380,30 1440,15 L1440,60 Z" />
-        </svg>
-      </div>
-
       <div className="contenedor footer__contenido">
         {/* ── Left: Brand + Tagline ──────────────────── */}
         <div className="footer__bloque footer__bloque--marca">
