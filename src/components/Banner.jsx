@@ -3,7 +3,7 @@ import '../styles/Banner.css'
 const ESTADISTICAS = [
   { valor: '+5.000', etiqueta: 'estudiantes' },
   { valor: '120', etiqueta: 'cursos' },
-  { valor: '4.9', etiqueta: 'valoración' },
+  { valor: '4.9 ★', etiqueta: 'valoración' },
 ]
 
 function Banner() {
@@ -15,7 +15,7 @@ function Banner() {
           Academia Dev
         </p>
         <h1 className="banner__titulo">
-          Aprende desarrollo web y lanza tu carrera
+          Aprende desarrollo web y potencia tu futuro
         </h1>
         <p className="banner__subtitulo">
           Cursos prácticos de HTML, CSS y JavaScript impartidos por
