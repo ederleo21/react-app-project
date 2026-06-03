@@ -1,6 +1,8 @@
 import '../styles/Footer.css'
 
 function Footer() {
+  const anioActual = new Date().getFullYear()
+
   return (
     <footer className="footer">
       <div className="contenedor footer__contenido">
@@ -17,7 +19,7 @@ function Footer() {
           </a>
         </nav>
         <p className="footer__copy">
-          © 2026 Academia Dev. Todos los derechos reservados.
+          © {anioActual} Academia Dev. Todos los derechos reservados.
         </p>
       </div>
     </footer>
