@@ -49,6 +49,7 @@ function RegistroForm() {
   const manejarCambio = (evento) => {
     const { name, value } = evento.target
     setDatos((previo) => ({ ...previo, [name]: value }))
+    if (enviado) setEnviado(false)
     if (errores[name]) {
       setErrores((previo) => ({ ...previo, [name]: validarCampo(name, value) }))
     }
