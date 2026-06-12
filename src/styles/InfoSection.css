@@ -65,17 +65,24 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 4.2rem;
+  height: 4.2rem;
   margin-bottom: var(--espacio-sm);
-  border-radius: 1rem;
-  background: linear-gradient(135deg, rgba(var(--color-primario-rgb), 0.16), rgba(249, 115, 98, 0.16));
+  border-radius: 1.1rem;
+  background: linear-gradient(135deg, rgba(var(--color-primario-rgb), 0.14), rgba(249, 115, 98, 0.14));
   color: var(--color-primario-oscuro);
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info__tarjeta:hover .info__icono {
+  transform: scale(1.1) translateY(-2px);
+  background: linear-gradient(135deg, rgba(var(--color-primario-rgb), 0.22), rgba(249, 115, 98, 0.22));
+  box-shadow: 0 6px 18px -4px rgba(var(--color-primario-rgb), 0.25);
 }
 
 .info__icono svg {
-  width: 1.75rem;
-  height: 1.75rem;
+  width: 2.1rem;
+  height: 2.1rem;
 }
 
 .info__tarjeta-titulo {
