@@ -2,8 +2,10 @@
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  background: linear-gradient(135deg, #fff4ea 0%, #ffe9d6 55%, #ffdcc4 100%);
-  color: var(--color-texto);
+  background-image: linear-gradient(105deg, rgba(26, 17, 10, 0.9) 0%, rgba(26, 17, 10, 0.8) 45%, rgba(26, 17, 10, 0.5) 100%), url('../assets/banner_bg.png');
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
   padding-block: calc(var(--espacio-xl) * 1.25) calc(var(--espacio-xl) * 1.75);
 }
 
@@ -12,9 +14,7 @@
   position: absolute;
   inset: 0;
   z-index: -1;
-  background:
-    radial-gradient(circle at 12% 18%, rgba(255, 255, 255, 0.55), transparent 40%),
-    radial-gradient(circle at 88% 70%, rgba(249, 115, 22, 0.12), transparent 45%);
+  background: radial-gradient(circle at 88% 70%, rgba(249, 115, 22, 0.15), transparent 45%);
 }
 
 .banner__contenido {
@@ -34,9 +34,9 @@
   letter-spacing: 0.12em;
   font-size: var(--tamano-pequeno);
   font-weight: 700;
-  color: var(--color-primario-oscuro);
-  background-color: rgba(var(--color-primario-rgb), 0.12);
-  border: 1px solid rgba(var(--color-primario-rgb), 0.22);
+  color: #fffaf4;
+  background-color: rgba(249, 115, 22, 0.2);
+  border: 1px solid rgba(249, 115, 22, 0.35);
   padding: 0.4rem 0.9rem;
   border-radius: 999px;
 }
@@ -66,13 +66,13 @@
   line-height: 1.12;
   max-width: 18ch;
   letter-spacing: -0.02em;
-  color: var(--color-texto);
+  color: #ffffff;
 }
 
 .banner__subtitulo {
   font-size: var(--tamano-grande);
   max-width: 50ch;
-  color: var(--color-texto-suave);
+  color: #e2d7cf;
 }
 
 .banner__cta {
@@ -99,7 +99,7 @@
   gap: var(--espacio-lg);
   margin-top: var(--espacio-md);
   padding-top: var(--espacio-md);
-  border-top: 1px solid rgba(var(--color-primario-rgb), 0.18);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
   width: 100%;
 }
 
@@ -107,7 +107,7 @@
   font-size: 1.75rem;
   font-weight: 800;
   line-height: 1;
-  color: var(--color-primario-oscuro);
+  color: var(--color-primario);
 }
 
 .banner__stat-etiqueta {
@@ -115,7 +115,7 @@
   font-size: var(--tamano-pequeno);
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--color-texto-suave);
+  color: #b5a499;
 }
 
 .banner__onda {
